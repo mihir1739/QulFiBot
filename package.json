@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postversion": "git push --atomic --follow-tags origin develop develop:master",
-    "start": "node index",
+    "start": "nodemon index",
     "lint": "eslint --ext .ts --ext .js .",
     "typecheck": "tsc --noEmit"
   },
@@ -37,6 +37,7 @@
     "jspack": "0.0.4",
     "millisecond": "^0.1.2",
     "nedb-promise": "^2.0.1",
+    "nodemon": "^3.0.2",
     "ramda": "^0.29.1",
     "require-directory": "^2.1.1",
     "spamwatch": "^0.4.0",
